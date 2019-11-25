@@ -27,7 +27,7 @@ class GOJAssignmentUITests: XCTestCase {
         let contactNavigationBar = app.navigationBars["Contact"]
         let groupButton = contactNavigationBar.buttons["Groups"]
         let addContactButton = contactNavigationBar.buttons["Add"]
-        let tableIndexElement = tablesQuery.otherElements["table index"]
+        let tableIndexElement = tablesQuery.otherElements["Section index"]
         let sectionHeader = tablesQuery.staticTexts["A"]
         XCTAssertTrue(contactNavigationBar.exists)
         XCTAssertTrue(groupButton.exists)
@@ -38,7 +38,7 @@ class GOJAssignmentUITests: XCTestCase {
 
     func testAddEditContactPage() {
                         
-        let contactNavigationBar = app.navigationBars["Contact"]
+                let contactNavigationBar = app.navigationBars["Contact"]
         let addContactButton = contactNavigationBar.buttons["Add"]
 
         XCTAssertTrue(contactNavigationBar.exists)
@@ -51,8 +51,7 @@ class GOJAssignmentUITests: XCTestCase {
         let lastNameField = addTableQuery.cells.staticTexts["Last Name"]
         let mobileField = addTableQuery.cells.staticTexts["mobile"]
         let emailField = addTableQuery.cells.staticTexts["email"]
-        let imageViewQuery = addTableQuery.cells.containing(.image, identifier:"placeholder_photo")
-        let actionSheetButton = imageViewQuery.children(matching: .button).element
+        let actionSheetButton = app.tables.cells.containing(.image, identifier:"camera_button").children(matching: .button).element
 
         XCTAssertTrue(firstNameField.exists)
         XCTAssertTrue(lastNameField.exists)
@@ -75,8 +74,8 @@ class GOJAssignmentUITests: XCTestCase {
 
         cancelButton.tap()
 
-        let navigationBar = app.navigationBars["GOJAssignment.GOJContactAddEditView"]
-        let doneButton = navigationBar.buttons["Done"]
+        let navigationBar = app.navigationBars["GOJAssignment.GOJContactAddEditVC"]
+                let doneButton = navigationBar.buttons["Done"]
         let dismissButton = navigationBar.buttons["Cancel"]
         XCTAssertTrue(navigationBar.exists)
         XCTAssertTrue(doneButton.exists)
