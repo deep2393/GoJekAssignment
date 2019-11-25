@@ -19,7 +19,7 @@ enum GOJCallback {
     case openImagePicker
 }
 
-enum GODetailCellType {
+enum GOJDetailCellType {
     case header, firstName, lastName, email, mobile
 }
 

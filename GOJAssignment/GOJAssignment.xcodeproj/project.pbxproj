@@ -12,51 +12,6 @@
 		D4016234238A34B20074D8D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4016232238A34B20074D8D2 /* LaunchScreen.storyboard */; };
 		D401623F238A34B30074D8D2 /* GOJAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D401623E238A34B30074D8D2 /* GOJAssignmentTests.swift */; };
 		D401624A238A34B30074D8D2 /* GOJAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4016249238A34B30074D8D2 /* GOJAssignmentUITests.swift */; };
-		D4016273238A38B80074D8D2 /* GOJContactAddEditVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4016259238A38B80074D8D2 /* GOJContactAddEditVM.swift */; };
-		D4016274238A38B80074D8D2 /* GOJContactAddEditVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4016259238A38B80074D8D2 /* GOJContactAddEditVM.swift */; };
-		D4016275238A38B80074D8D2 /* GOJContactAddEditVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4016259238A38B80074D8D2 /* GOJContactAddEditVM.swift */; };
-		D4016276238A38B80074D8D2 /* GOJContactAddEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D401625B238A38B80074D8D2 /* GOJContactAddEditVC.swift */; };
-		D4016277238A38B80074D8D2 /* GOJContactAddEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D401625B238A38B80074D8D2 /* GOJContactAddEditVC.swift */; };
-		D4016278238A38B80074D8D2 /* GOJContactAddEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D401625B238A38B80074D8D2 /* GOJContactAddEditVC.swift */; };
-		D4016279238A38B80074D8D2 /* GOJContactAddEditInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D401625D238A38B80074D8D2 /* GOJContactAddEditInputCell.swift */; };
-		D401627A238A38B80074D8D2 /* GOJContactAddEditInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D401625D238A38B80074D8D2 /* GOJContactAddEditInputCell.swift */; };
-		D401627B238A38B80074D8D2 /* GOJContactAddEditInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D401625D238A38B80074D8D2 /* GOJContactAddEditInputCell.swift */; };
-		D401627C238A38B80074D8D2 /* GOJContactAddEditHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D401625E238A38B80074D8D2 /* GOJContactAddEditHeaderCell.swift */; };
-		D401627D238A38B80074D8D2 /* GOJContactAddEditHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D401625E238A38B80074D8D2 /* GOJContactAddEditHeaderCell.swift */; };
-		D401627E238A38B80074D8D2 /* GOJContactAddEditHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D401625E238A38B80074D8D2 /* GOJContactAddEditHeaderCell.swift */; };
-		D401627F238A38B80074D8D2 /* GOJContactListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4016261238A38B80074D8D2 /* GOJContactListVM.swift */; };
-		D4016280238A38B80074D8D2 /* GOJContactListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4016261238A38B80074D8D2 /* GOJContactListVM.swift */; };
-		D4016281238A38B80074D8D2 /* GOJContactListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4016261238A38B80074D8D2 /* GOJContactListVM.swift */; };
-		D4016282238A38B80074D8D2 /* GOJContactListSectionVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4016262238A38B80074D8D2 /* GOJContactListSectionVM.swift */; };
-		D4016283238A38B80074D8D2 /* GOJContactListSectionVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4016262238A38B80074D8D2 /* GOJContactListSectionVM.swift */; };
-		D4016284238A38B80074D8D2 /* GOJContactListSectionVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4016262238A38B80074D8D2 /* GOJContactListSectionVM.swift */; };
-		D4016285238A38B80074D8D2 /* GOJContactListItemVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4016263238A38B80074D8D2 /* GOJContactListItemVM.swift */; };
-		D4016286238A38B80074D8D2 /* GOJContactListItemVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4016263238A38B80074D8D2 /* GOJContactListItemVM.swift */; };
-		D4016287238A38B80074D8D2 /* GOJContactListItemVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4016263238A38B80074D8D2 /* GOJContactListItemVM.swift */; };
-		D4016288238A38B80074D8D2 /* GOJContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4016265238A38B80074D8D2 /* GOJContactModel.swift */; };
-		D4016289238A38B80074D8D2 /* GOJContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4016265238A38B80074D8D2 /* GOJContactModel.swift */; };
-		D401628A238A38B80074D8D2 /* GOJContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4016265238A38B80074D8D2 /* GOJContactModel.swift */; };
-		D401628B238A38B80074D8D2 /* GOJContactListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4016267238A38B80074D8D2 /* GOJContactListVC.swift */; };
-		D401628C238A38B80074D8D2 /* GOJContactListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4016267238A38B80074D8D2 /* GOJContactListVC.swift */; };
-		D401628D238A38B80074D8D2 /* GOJContactListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4016267238A38B80074D8D2 /* GOJContactListVC.swift */; };
-		D401628E238A38B80074D8D2 /* GOJContactListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4016269238A38B80074D8D2 /* GOJContactListCell.swift */; };
-		D401628F238A38B80074D8D2 /* GOJContactListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4016269238A38B80074D8D2 /* GOJContactListCell.swift */; };
-		D4016290238A38B80074D8D2 /* GOJContactListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4016269238A38B80074D8D2 /* GOJContactListCell.swift */; };
-		D4016291238A38B80074D8D2 /* GOJContactDetailItemVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D401626C238A38B80074D8D2 /* GOJContactDetailItemVM.swift */; };
-		D4016292238A38B80074D8D2 /* GOJContactDetailItemVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D401626C238A38B80074D8D2 /* GOJContactDetailItemVM.swift */; };
-		D4016293238A38B80074D8D2 /* GOJContactDetailItemVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D401626C238A38B80074D8D2 /* GOJContactDetailItemVM.swift */; };
-		D4016294238A38B80074D8D2 /* GOJContactDetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D401626D238A38B80074D8D2 /* GOJContactDetailVM.swift */; };
-		D4016295238A38B80074D8D2 /* GOJContactDetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D401626D238A38B80074D8D2 /* GOJContactDetailVM.swift */; };
-		D4016296238A38B80074D8D2 /* GOJContactDetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D401626D238A38B80074D8D2 /* GOJContactDetailVM.swift */; };
-		D4016297238A38B80074D8D2 /* GOJContactDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D401626F238A38B80074D8D2 /* GOJContactDetailVC.swift */; };
-		D4016298238A38B80074D8D2 /* GOJContactDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D401626F238A38B80074D8D2 /* GOJContactDetailVC.swift */; };
-		D4016299238A38B80074D8D2 /* GOJContactDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D401626F238A38B80074D8D2 /* GOJContactDetailVC.swift */; };
-		D401629A238A38B80074D8D2 /* GOJContactDetailsHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4016271238A38B80074D8D2 /* GOJContactDetailsHeaderCell.swift */; };
-		D401629B238A38B80074D8D2 /* GOJContactDetailsHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4016271238A38B80074D8D2 /* GOJContactDetailsHeaderCell.swift */; };
-		D401629C238A38B80074D8D2 /* GOJContactDetailsHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4016271238A38B80074D8D2 /* GOJContactDetailsHeaderCell.swift */; };
-		D401629D238A38B80074D8D2 /* GOJContactDetailsInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4016272238A38B80074D8D2 /* GOJContactDetailsInfoCell.swift */; };
-		D401629E238A38B80074D8D2 /* GOJContactDetailsInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4016272238A38B80074D8D2 /* GOJContactDetailsInfoCell.swift */; };
-		D401629F238A38B80074D8D2 /* GOJContactDetailsInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4016272238A38B80074D8D2 /* GOJContactDetailsInfoCell.swift */; };
 		D40162AB238A38E40074D8D2 /* GOJImageDownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40162A1238A38E40074D8D2 /* GOJImageDownloadManager.swift */; };
 		D40162AC238A38E40074D8D2 /* GOJImageDownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40162A1238A38E40074D8D2 /* GOJImageDownloadManager.swift */; };
 		D40162AD238A38E40074D8D2 /* GOJImageDownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40162A1238A38E40074D8D2 /* GOJImageDownloadManager.swift */; };
@@ -78,6 +33,57 @@
 		D40162C4238A3C790074D8D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D40162C3238A3C790074D8D2 /* Main.storyboard */; };
 		D40162C5238A3C790074D8D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D40162C3238A3C790074D8D2 /* Main.storyboard */; };
 		D40162C6238A3C790074D8D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D40162C3238A3C790074D8D2 /* Main.storyboard */; };
+		D4B2FA3F238BEC9C008FE474 /* GOJContactDetailItemVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B2FA25238BEC9C008FE474 /* GOJContactDetailItemVM.swift */; };
+		D4B2FA40238BEC9C008FE474 /* GOJContactDetailItemVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B2FA25238BEC9C008FE474 /* GOJContactDetailItemVM.swift */; };
+		D4B2FA41238BEC9C008FE474 /* GOJContactDetailItemVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B2FA25238BEC9C008FE474 /* GOJContactDetailItemVM.swift */; };
+		D4B2FA42238BEC9C008FE474 /* GOJContactDetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B2FA26238BEC9C008FE474 /* GOJContactDetailVM.swift */; };
+		D4B2FA43238BEC9C008FE474 /* GOJContactDetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B2FA26238BEC9C008FE474 /* GOJContactDetailVM.swift */; };
+		D4B2FA44238BEC9C008FE474 /* GOJContactDetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B2FA26238BEC9C008FE474 /* GOJContactDetailVM.swift */; };
+		D4B2FA45238BEC9C008FE474 /* GOJContactDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B2FA28238BEC9C008FE474 /* GOJContactDetailVC.swift */; };
+		D4B2FA46238BEC9C008FE474 /* GOJContactDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B2FA28238BEC9C008FE474 /* GOJContactDetailVC.swift */; };
+		D4B2FA47238BEC9C008FE474 /* GOJContactDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B2FA28238BEC9C008FE474 /* GOJContactDetailVC.swift */; };
+		D4B2FA48238BEC9C008FE474 /* GOJContactDetailsHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B2FA2A238BEC9C008FE474 /* GOJContactDetailsHeaderCell.swift */; };
+		D4B2FA49238BEC9C008FE474 /* GOJContactDetailsHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B2FA2A238BEC9C008FE474 /* GOJContactDetailsHeaderCell.swift */; };
+		D4B2FA4A238BEC9C008FE474 /* GOJContactDetailsHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B2FA2A238BEC9C008FE474 /* GOJContactDetailsHeaderCell.swift */; };
+		D4B2FA4B238BEC9C008FE474 /* GOJContactDetailsInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B2FA2B238BEC9C008FE474 /* GOJContactDetailsInfoCell.swift */; };
+		D4B2FA4C238BEC9C008FE474 /* GOJContactDetailsInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B2FA2B238BEC9C008FE474 /* GOJContactDetailsInfoCell.swift */; };
+		D4B2FA4D238BEC9C008FE474 /* GOJContactDetailsInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B2FA2B238BEC9C008FE474 /* GOJContactDetailsInfoCell.swift */; };
+		D4B2FA4E238BEC9C008FE474 /* GOJContactAddEditVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B2FA2E238BEC9C008FE474 /* GOJContactAddEditVM.swift */; };
+		D4B2FA4F238BEC9C008FE474 /* GOJContactAddEditVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B2FA2E238BEC9C008FE474 /* GOJContactAddEditVM.swift */; };
+		D4B2FA50238BEC9C008FE474 /* GOJContactAddEditVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B2FA2E238BEC9C008FE474 /* GOJContactAddEditVM.swift */; };
+		D4B2FA51238BEC9C008FE474 /* GOJContactAddEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B2FA30238BEC9C008FE474 /* GOJContactAddEditVC.swift */; };
+		D4B2FA52238BEC9C008FE474 /* GOJContactAddEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B2FA30238BEC9C008FE474 /* GOJContactAddEditVC.swift */; };
+		D4B2FA53238BEC9C008FE474 /* GOJContactAddEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B2FA30238BEC9C008FE474 /* GOJContactAddEditVC.swift */; };
+		D4B2FA54238BEC9C008FE474 /* GOJContactAddEditInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B2FA32238BEC9C008FE474 /* GOJContactAddEditInputCell.swift */; };
+		D4B2FA55238BEC9C008FE474 /* GOJContactAddEditInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B2FA32238BEC9C008FE474 /* GOJContactAddEditInputCell.swift */; };
+		D4B2FA56238BEC9C008FE474 /* GOJContactAddEditInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B2FA32238BEC9C008FE474 /* GOJContactAddEditInputCell.swift */; };
+		D4B2FA57238BEC9C008FE474 /* GOJContactAddEditHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B2FA33238BEC9C008FE474 /* GOJContactAddEditHeaderCell.swift */; };
+		D4B2FA58238BEC9C008FE474 /* GOJContactAddEditHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B2FA33238BEC9C008FE474 /* GOJContactAddEditHeaderCell.swift */; };
+		D4B2FA59238BEC9C008FE474 /* GOJContactAddEditHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B2FA33238BEC9C008FE474 /* GOJContactAddEditHeaderCell.swift */; };
+		D4B2FA5A238BEC9C008FE474 /* GOJContactListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B2FA36238BEC9C008FE474 /* GOJContactListVM.swift */; };
+		D4B2FA5B238BEC9C008FE474 /* GOJContactListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B2FA36238BEC9C008FE474 /* GOJContactListVM.swift */; };
+		D4B2FA5C238BEC9C008FE474 /* GOJContactListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B2FA36238BEC9C008FE474 /* GOJContactListVM.swift */; };
+		D4B2FA5D238BEC9C008FE474 /* GOJContactListSectionVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B2FA37238BEC9C008FE474 /* GOJContactListSectionVM.swift */; };
+		D4B2FA5E238BEC9C008FE474 /* GOJContactListSectionVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B2FA37238BEC9C008FE474 /* GOJContactListSectionVM.swift */; };
+		D4B2FA5F238BEC9C008FE474 /* GOJContactListSectionVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B2FA37238BEC9C008FE474 /* GOJContactListSectionVM.swift */; };
+		D4B2FA60238BEC9C008FE474 /* GOJContactListItemVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B2FA38238BEC9C008FE474 /* GOJContactListItemVM.swift */; };
+		D4B2FA61238BEC9C008FE474 /* GOJContactListItemVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B2FA38238BEC9C008FE474 /* GOJContactListItemVM.swift */; };
+		D4B2FA62238BEC9C008FE474 /* GOJContactListItemVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B2FA38238BEC9C008FE474 /* GOJContactListItemVM.swift */; };
+		D4B2FA63238BEC9C008FE474 /* GOJContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B2FA3A238BEC9C008FE474 /* GOJContactModel.swift */; };
+		D4B2FA64238BEC9C008FE474 /* GOJContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B2FA3A238BEC9C008FE474 /* GOJContactModel.swift */; };
+		D4B2FA65238BEC9C008FE474 /* GOJContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B2FA3A238BEC9C008FE474 /* GOJContactModel.swift */; };
+		D4B2FA66238BEC9C008FE474 /* GOJContactListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B2FA3C238BEC9C008FE474 /* GOJContactListVC.swift */; };
+		D4B2FA67238BEC9C008FE474 /* GOJContactListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B2FA3C238BEC9C008FE474 /* GOJContactListVC.swift */; };
+		D4B2FA68238BEC9C008FE474 /* GOJContactListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B2FA3C238BEC9C008FE474 /* GOJContactListVC.swift */; };
+		D4B2FA69238BEC9C008FE474 /* GOJContactListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B2FA3E238BEC9C008FE474 /* GOJContactListCell.swift */; };
+		D4B2FA6A238BEC9C008FE474 /* GOJContactListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B2FA3E238BEC9C008FE474 /* GOJContactListCell.swift */; };
+		D4B2FA6B238BEC9C008FE474 /* GOJContactListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B2FA3E238BEC9C008FE474 /* GOJContactListCell.swift */; };
+		D4BCBCD0238BE5AF0089142F /* mockContactList.json in Resources */ = {isa = PBXBuildFile; fileRef = D4BCBCCE238BE5AF0089142F /* mockContactList.json */; };
+		D4BCBCD1238BE5AF0089142F /* mockContactList.json in Resources */ = {isa = PBXBuildFile; fileRef = D4BCBCCE238BE5AF0089142F /* mockContactList.json */; };
+		D4BCBCD2238BE5AF0089142F /* mockContactList.json in Resources */ = {isa = PBXBuildFile; fileRef = D4BCBCCE238BE5AF0089142F /* mockContactList.json */; };
+		D4BCBCD3238BE5AF0089142F /* GJMockAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BCBCCF238BE5AF0089142F /* GJMockAPIHandler.swift */; };
+		D4BCBCD4238BE5AF0089142F /* GJMockAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BCBCCF238BE5AF0089142F /* GJMockAPIHandler.swift */; };
+		D4BCBCD5238BE5AF0089142F /* GJMockAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BCBCCF238BE5AF0089142F /* GJMockAPIHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,21 +115,6 @@
 		D4016245238A34B30074D8D2 /* GOJAssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GOJAssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4016249238A34B30074D8D2 /* GOJAssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GOJAssignmentUITests.swift; sourceTree = "<group>"; };
 		D401624B238A34B30074D8D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D4016259238A38B80074D8D2 /* GOJContactAddEditVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOJContactAddEditVM.swift; sourceTree = "<group>"; };
-		D401625B238A38B80074D8D2 /* GOJContactAddEditVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOJContactAddEditVC.swift; sourceTree = "<group>"; };
-		D401625D238A38B80074D8D2 /* GOJContactAddEditInputCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOJContactAddEditInputCell.swift; sourceTree = "<group>"; };
-		D401625E238A38B80074D8D2 /* GOJContactAddEditHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOJContactAddEditHeaderCell.swift; sourceTree = "<group>"; };
-		D4016261238A38B80074D8D2 /* GOJContactListVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOJContactListVM.swift; sourceTree = "<group>"; };
-		D4016262238A38B80074D8D2 /* GOJContactListSectionVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOJContactListSectionVM.swift; sourceTree = "<group>"; };
-		D4016263238A38B80074D8D2 /* GOJContactListItemVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOJContactListItemVM.swift; sourceTree = "<group>"; };
-		D4016265238A38B80074D8D2 /* GOJContactModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOJContactModel.swift; sourceTree = "<group>"; };
-		D4016267238A38B80074D8D2 /* GOJContactListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOJContactListVC.swift; sourceTree = "<group>"; };
-		D4016269238A38B80074D8D2 /* GOJContactListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOJContactListCell.swift; sourceTree = "<group>"; };
-		D401626C238A38B80074D8D2 /* GOJContactDetailItemVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOJContactDetailItemVM.swift; sourceTree = "<group>"; };
-		D401626D238A38B80074D8D2 /* GOJContactDetailVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOJContactDetailVM.swift; sourceTree = "<group>"; };
-		D401626F238A38B80074D8D2 /* GOJContactDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOJContactDetailVC.swift; sourceTree = "<group>"; };
-		D4016271238A38B80074D8D2 /* GOJContactDetailsHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOJContactDetailsHeaderCell.swift; sourceTree = "<group>"; };
-		D4016272238A38B80074D8D2 /* GOJContactDetailsInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOJContactDetailsInfoCell.swift; sourceTree = "<group>"; };
 		D40162A1238A38E40074D8D2 /* GOJImageDownloadManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOJImageDownloadManager.swift; sourceTree = "<group>"; };
 		D40162A2238A38E40074D8D2 /* GOJApiHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOJApiHandler.swift; sourceTree = "<group>"; };
 		D40162A3238A38E40074D8D2 /* GOJNetworkHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOJNetworkHelper.swift; sourceTree = "<group>"; };
@@ -131,6 +122,23 @@
 		D40162A6238A38E40074D8D2 /* GOJConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOJConstants.swift; sourceTree = "<group>"; };
 		D40162A7238A38E40074D8D2 /* GOJExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOJExtensions.swift; sourceTree = "<group>"; };
 		D40162C3238A3C790074D8D2 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		D4B2FA25238BEC9C008FE474 /* GOJContactDetailItemVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOJContactDetailItemVM.swift; sourceTree = "<group>"; };
+		D4B2FA26238BEC9C008FE474 /* GOJContactDetailVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOJContactDetailVM.swift; sourceTree = "<group>"; };
+		D4B2FA28238BEC9C008FE474 /* GOJContactDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOJContactDetailVC.swift; sourceTree = "<group>"; };
+		D4B2FA2A238BEC9C008FE474 /* GOJContactDetailsHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOJContactDetailsHeaderCell.swift; sourceTree = "<group>"; };
+		D4B2FA2B238BEC9C008FE474 /* GOJContactDetailsInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOJContactDetailsInfoCell.swift; sourceTree = "<group>"; };
+		D4B2FA2E238BEC9C008FE474 /* GOJContactAddEditVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOJContactAddEditVM.swift; sourceTree = "<group>"; };
+		D4B2FA30238BEC9C008FE474 /* GOJContactAddEditVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOJContactAddEditVC.swift; sourceTree = "<group>"; };
+		D4B2FA32238BEC9C008FE474 /* GOJContactAddEditInputCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOJContactAddEditInputCell.swift; sourceTree = "<group>"; };
+		D4B2FA33238BEC9C008FE474 /* GOJContactAddEditHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOJContactAddEditHeaderCell.swift; sourceTree = "<group>"; };
+		D4B2FA36238BEC9C008FE474 /* GOJContactListVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOJContactListVM.swift; sourceTree = "<group>"; };
+		D4B2FA37238BEC9C008FE474 /* GOJContactListSectionVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOJContactListSectionVM.swift; sourceTree = "<group>"; };
+		D4B2FA38238BEC9C008FE474 /* GOJContactListItemVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOJContactListItemVM.swift; sourceTree = "<group>"; };
+		D4B2FA3A238BEC9C008FE474 /* GOJContactModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOJContactModel.swift; sourceTree = "<group>"; };
+		D4B2FA3C238BEC9C008FE474 /* GOJContactListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOJContactListVC.swift; sourceTree = "<group>"; };
+		D4B2FA3E238BEC9C008FE474 /* GOJContactListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOJContactListCell.swift; sourceTree = "<group>"; };
+		D4BCBCCE238BE5AF0089142F /* mockContactList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mockContactList.json; sourceTree = "<group>"; };
+		D4BCBCCF238BE5AF0089142F /* GJMockAPIHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GJMockAPIHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,11 +189,12 @@
 		D4016226238A34B10074D8D2 /* GOJAssignment */ = {
 			isa = PBXGroup;
 			children = (
-				D401625F238A38B80074D8D2 /* ContactList */,
-				D401626A238A38B80074D8D2 /* ContactDetail */,
-				D4016257238A38B80074D8D2 /* ContactEdit */,
+				D4B2FA2C238BEC9C008FE474 /* ContactAddEdit */,
+				D4B2FA23238BEC9C008FE474 /* ContactDetail */,
+				D4B2FA34238BEC9C008FE474 /* ContactList */,
 				D40162A5238A38E40074D8D2 /* Helper */,
 				D40162A0238A38E40074D8D2 /* NetworkHelpers */,
+				D4BCBCCD238BE5AF0089142F /* MockHelpers */,
 				D4016227238A34B10074D8D2 /* AppDelegate.swift */,
 				D4016230238A34B20074D8D2 /* Assets.xcassets */,
 				D40162C3238A3C790074D8D2 /* Main.storyboard */,
@@ -213,125 +222,6 @@
 			path = GOJAssignmentUITests;
 			sourceTree = "<group>";
 		};
-		D4016257238A38B80074D8D2 /* ContactEdit */ = {
-			isa = PBXGroup;
-			children = (
-				D4016258238A38B80074D8D2 /* VM */,
-				D401625A238A38B80074D8D2 /* C */,
-				D401625C238A38B80074D8D2 /* V */,
-			);
-			name = ContactEdit;
-			path = "../../../Go-Jek_iOS/GoJek_iOS/GoJek_iOS/ContactEdit";
-			sourceTree = "<group>";
-		};
-		D4016258238A38B80074D8D2 /* VM */ = {
-			isa = PBXGroup;
-			children = (
-				D4016259238A38B80074D8D2 /* GOJContactAddEditVM.swift */,
-			);
-			path = VM;
-			sourceTree = "<group>";
-		};
-		D401625A238A38B80074D8D2 /* C */ = {
-			isa = PBXGroup;
-			children = (
-				D401625B238A38B80074D8D2 /* GOJContactAddEditVC.swift */,
-			);
-			path = C;
-			sourceTree = "<group>";
-		};
-		D401625C238A38B80074D8D2 /* V */ = {
-			isa = PBXGroup;
-			children = (
-				D401625D238A38B80074D8D2 /* GOJContactAddEditInputCell.swift */,
-				D401625E238A38B80074D8D2 /* GOJContactAddEditHeaderCell.swift */,
-			);
-			path = V;
-			sourceTree = "<group>";
-		};
-		D401625F238A38B80074D8D2 /* ContactList */ = {
-			isa = PBXGroup;
-			children = (
-				D4016260238A38B80074D8D2 /* VM */,
-				D4016264238A38B80074D8D2 /* M */,
-				D4016266238A38B80074D8D2 /* C */,
-				D4016268238A38B80074D8D2 /* V */,
-			);
-			name = ContactList;
-			path = "../../../Go-Jek_iOS/GoJek_iOS/GoJek_iOS/ContactList";
-			sourceTree = "<group>";
-		};
-		D4016260238A38B80074D8D2 /* VM */ = {
-			isa = PBXGroup;
-			children = (
-				D4016261238A38B80074D8D2 /* GOJContactListVM.swift */,
-				D4016262238A38B80074D8D2 /* GOJContactListSectionVM.swift */,
-				D4016263238A38B80074D8D2 /* GOJContactListItemVM.swift */,
-			);
-			path = VM;
-			sourceTree = "<group>";
-		};
-		D4016264238A38B80074D8D2 /* M */ = {
-			isa = PBXGroup;
-			children = (
-				D4016265238A38B80074D8D2 /* GOJContactModel.swift */,
-			);
-			path = M;
-			sourceTree = "<group>";
-		};
-		D4016266238A38B80074D8D2 /* C */ = {
-			isa = PBXGroup;
-			children = (
-				D4016267238A38B80074D8D2 /* GOJContactListVC.swift */,
-			);
-			path = C;
-			sourceTree = "<group>";
-		};
-		D4016268238A38B80074D8D2 /* V */ = {
-			isa = PBXGroup;
-			children = (
-				D4016269238A38B80074D8D2 /* GOJContactListCell.swift */,
-			);
-			path = V;
-			sourceTree = "<group>";
-		};
-		D401626A238A38B80074D8D2 /* ContactDetail */ = {
-			isa = PBXGroup;
-			children = (
-				D401626B238A38B80074D8D2 /* VM */,
-				D401626E238A38B80074D8D2 /* C */,
-				D4016270238A38B80074D8D2 /* V */,
-			);
-			name = ContactDetail;
-			path = "../../../Go-Jek_iOS/GoJek_iOS/GoJek_iOS/ContactDetail";
-			sourceTree = "<group>";
-		};
-		D401626B238A38B80074D8D2 /* VM */ = {
-			isa = PBXGroup;
-			children = (
-				D401626C238A38B80074D8D2 /* GOJContactDetailItemVM.swift */,
-				D401626D238A38B80074D8D2 /* GOJContactDetailVM.swift */,
-			);
-			path = VM;
-			sourceTree = "<group>";
-		};
-		D401626E238A38B80074D8D2 /* C */ = {
-			isa = PBXGroup;
-			children = (
-				D401626F238A38B80074D8D2 /* GOJContactDetailVC.swift */,
-			);
-			path = C;
-			sourceTree = "<group>";
-		};
-		D4016270238A38B80074D8D2 /* V */ = {
-			isa = PBXGroup;
-			children = (
-				D4016271238A38B80074D8D2 /* GOJContactDetailsHeaderCell.swift */,
-				D4016272238A38B80074D8D2 /* GOJContactDetailsInfoCell.swift */,
-			);
-			path = V;
-			sourceTree = "<group>";
-		};
 		D40162A0238A38E40074D8D2 /* NetworkHelpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -350,6 +240,131 @@
 				D40162A7238A38E40074D8D2 /* GOJExtensions.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		D4B2FA23238BEC9C008FE474 /* ContactDetail */ = {
+			isa = PBXGroup;
+			children = (
+				D4B2FA24238BEC9C008FE474 /* VM */,
+				D4B2FA27238BEC9C008FE474 /* C */,
+				D4B2FA29238BEC9C008FE474 /* V */,
+			);
+			path = ContactDetail;
+			sourceTree = "<group>";
+		};
+		D4B2FA24238BEC9C008FE474 /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				D4B2FA25238BEC9C008FE474 /* GOJContactDetailItemVM.swift */,
+				D4B2FA26238BEC9C008FE474 /* GOJContactDetailVM.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		D4B2FA27238BEC9C008FE474 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				D4B2FA28238BEC9C008FE474 /* GOJContactDetailVC.swift */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		D4B2FA29238BEC9C008FE474 /* V */ = {
+			isa = PBXGroup;
+			children = (
+				D4B2FA2A238BEC9C008FE474 /* GOJContactDetailsHeaderCell.swift */,
+				D4B2FA2B238BEC9C008FE474 /* GOJContactDetailsInfoCell.swift */,
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		D4B2FA2C238BEC9C008FE474 /* ContactAddEdit */ = {
+			isa = PBXGroup;
+			children = (
+				D4B2FA2D238BEC9C008FE474 /* VM */,
+				D4B2FA2F238BEC9C008FE474 /* C */,
+				D4B2FA31238BEC9C008FE474 /* V */,
+			);
+			path = ContactAddEdit;
+			sourceTree = "<group>";
+		};
+		D4B2FA2D238BEC9C008FE474 /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				D4B2FA2E238BEC9C008FE474 /* GOJContactAddEditVM.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		D4B2FA2F238BEC9C008FE474 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				D4B2FA30238BEC9C008FE474 /* GOJContactAddEditVC.swift */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		D4B2FA31238BEC9C008FE474 /* V */ = {
+			isa = PBXGroup;
+			children = (
+				D4B2FA32238BEC9C008FE474 /* GOJContactAddEditInputCell.swift */,
+				D4B2FA33238BEC9C008FE474 /* GOJContactAddEditHeaderCell.swift */,
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		D4B2FA34238BEC9C008FE474 /* ContactList */ = {
+			isa = PBXGroup;
+			children = (
+				D4B2FA35238BEC9C008FE474 /* VM */,
+				D4B2FA39238BEC9C008FE474 /* M */,
+				D4B2FA3B238BEC9C008FE474 /* C */,
+				D4B2FA3D238BEC9C008FE474 /* V */,
+			);
+			path = ContactList;
+			sourceTree = "<group>";
+		};
+		D4B2FA35238BEC9C008FE474 /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				D4B2FA36238BEC9C008FE474 /* GOJContactListVM.swift */,
+				D4B2FA37238BEC9C008FE474 /* GOJContactListSectionVM.swift */,
+				D4B2FA38238BEC9C008FE474 /* GOJContactListItemVM.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		D4B2FA39238BEC9C008FE474 /* M */ = {
+			isa = PBXGroup;
+			children = (
+				D4B2FA3A238BEC9C008FE474 /* GOJContactModel.swift */,
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		D4B2FA3B238BEC9C008FE474 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				D4B2FA3C238BEC9C008FE474 /* GOJContactListVC.swift */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		D4B2FA3D238BEC9C008FE474 /* V */ = {
+			isa = PBXGroup;
+			children = (
+				D4B2FA3E238BEC9C008FE474 /* GOJContactListCell.swift */,
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		D4BCBCCD238BE5AF0089142F /* MockHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				D4BCBCCE238BE5AF0089142F /* mockContactList.json */,
+				D4BCBCCF238BE5AF0089142F /* GJMockAPIHandler.swift */,
+			);
+			path = MockHelpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -458,6 +473,7 @@
 			files = (
 				D40162C4238A3C790074D8D2 /* Main.storyboard in Resources */,
 				D4016234238A34B20074D8D2 /* LaunchScreen.storyboard in Resources */,
+				D4BCBCD0238BE5AF0089142F /* mockContactList.json in Resources */,
 				D4016231238A34B20074D8D2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -466,6 +482,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4BCBCD1238BE5AF0089142F /* mockContactList.json in Resources */,
 				D40162C5238A3C790074D8D2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -474,6 +491,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4BCBCD2238BE5AF0089142F /* mockContactList.json in Resources */,
 				D40162C6238A3C790074D8D2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -486,27 +504,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				D40162BA238A38E40074D8D2 /* GOJExtensions.swift in Sources */,
-				D401628B238A38B80074D8D2 /* GOJContactListVC.swift in Sources */,
+				D4B2FA51238BEC9C008FE474 /* GOJContactAddEditVC.swift in Sources */,
+				D4B2FA42238BEC9C008FE474 /* GOJContactDetailVM.swift in Sources */,
+				D4B2FA4E238BEC9C008FE474 /* GOJContactAddEditVM.swift in Sources */,
+				D4B2FA48238BEC9C008FE474 /* GOJContactDetailsHeaderCell.swift in Sources */,
 				D40162B7238A38E40074D8D2 /* GOJConstants.swift in Sources */,
-				D4016297238A38B80074D8D2 /* GOJContactDetailVC.swift in Sources */,
-				D4016294238A38B80074D8D2 /* GOJContactDetailVM.swift in Sources */,
-				D4016273238A38B80074D8D2 /* GOJContactAddEditVM.swift in Sources */,
-				D4016276238A38B80074D8D2 /* GOJContactAddEditVC.swift in Sources */,
-				D401628E238A38B80074D8D2 /* GOJContactListCell.swift in Sources */,
-				D4016282238A38B80074D8D2 /* GOJContactListSectionVM.swift in Sources */,
-				D4016288238A38B80074D8D2 /* GOJContactModel.swift in Sources */,
-				D401629D238A38B80074D8D2 /* GOJContactDetailsInfoCell.swift in Sources */,
-				D401627F238A38B80074D8D2 /* GOJContactListVM.swift in Sources */,
+				D4B2FA63238BEC9C008FE474 /* GOJContactModel.swift in Sources */,
+				D4B2FA60238BEC9C008FE474 /* GOJContactListItemVM.swift in Sources */,
+				D4B2FA54238BEC9C008FE474 /* GOJContactAddEditInputCell.swift in Sources */,
+				D4B2FA3F238BEC9C008FE474 /* GOJContactDetailItemVM.swift in Sources */,
 				D40162B4238A38E40074D8D2 /* GOJImageDownloadOperation.swift in Sources */,
-				D4016279238A38B80074D8D2 /* GOJContactAddEditInputCell.swift in Sources */,
-				D4016291238A38B80074D8D2 /* GOJContactDetailItemVM.swift in Sources */,
 				D40162AE238A38E40074D8D2 /* GOJApiHandler.swift in Sources */,
-				D401627C238A38B80074D8D2 /* GOJContactAddEditHeaderCell.swift in Sources */,
+				D4B2FA66238BEC9C008FE474 /* GOJContactListVC.swift in Sources */,
+				D4B2FA69238BEC9C008FE474 /* GOJContactListCell.swift in Sources */,
+				D4B2FA4B238BEC9C008FE474 /* GOJContactDetailsInfoCell.swift in Sources */,
+				D4BCBCD3238BE5AF0089142F /* GJMockAPIHandler.swift in Sources */,
 				D40162B1238A38E40074D8D2 /* GOJNetworkHelper.swift in Sources */,
-				D4016285238A38B80074D8D2 /* GOJContactListItemVM.swift in Sources */,
+				D4B2FA5D238BEC9C008FE474 /* GOJContactListSectionVM.swift in Sources */,
 				D40162AB238A38E40074D8D2 /* GOJImageDownloadManager.swift in Sources */,
+				D4B2FA5A238BEC9C008FE474 /* GOJContactListVM.swift in Sources */,
+				D4B2FA57238BEC9C008FE474 /* GOJContactAddEditHeaderCell.swift in Sources */,
+				D4B2FA45238BEC9C008FE474 /* GOJContactDetailVC.swift in Sources */,
 				D4016228238A34B10074D8D2 /* AppDelegate.swift in Sources */,
-				D401629A238A38B80074D8D2 /* GOJContactDetailsHeaderCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,27 +534,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				D40162BB238A38E40074D8D2 /* GOJExtensions.swift in Sources */,
-				D401628C238A38B80074D8D2 /* GOJContactListVC.swift in Sources */,
+				D4B2FA52238BEC9C008FE474 /* GOJContactAddEditVC.swift in Sources */,
+				D4B2FA43238BEC9C008FE474 /* GOJContactDetailVM.swift in Sources */,
+				D4B2FA4F238BEC9C008FE474 /* GOJContactAddEditVM.swift in Sources */,
+				D4B2FA49238BEC9C008FE474 /* GOJContactDetailsHeaderCell.swift in Sources */,
 				D40162B8238A38E40074D8D2 /* GOJConstants.swift in Sources */,
-				D4016298238A38B80074D8D2 /* GOJContactDetailVC.swift in Sources */,
-				D4016295238A38B80074D8D2 /* GOJContactDetailVM.swift in Sources */,
-				D4016274238A38B80074D8D2 /* GOJContactAddEditVM.swift in Sources */,
-				D4016277238A38B80074D8D2 /* GOJContactAddEditVC.swift in Sources */,
-				D401628F238A38B80074D8D2 /* GOJContactListCell.swift in Sources */,
-				D4016283238A38B80074D8D2 /* GOJContactListSectionVM.swift in Sources */,
-				D4016289238A38B80074D8D2 /* GOJContactModel.swift in Sources */,
-				D401629E238A38B80074D8D2 /* GOJContactDetailsInfoCell.swift in Sources */,
-				D4016280238A38B80074D8D2 /* GOJContactListVM.swift in Sources */,
+				D4B2FA64238BEC9C008FE474 /* GOJContactModel.swift in Sources */,
+				D4B2FA61238BEC9C008FE474 /* GOJContactListItemVM.swift in Sources */,
+				D4B2FA55238BEC9C008FE474 /* GOJContactAddEditInputCell.swift in Sources */,
+				D4B2FA40238BEC9C008FE474 /* GOJContactDetailItemVM.swift in Sources */,
 				D40162B5238A38E40074D8D2 /* GOJImageDownloadOperation.swift in Sources */,
-				D401627A238A38B80074D8D2 /* GOJContactAddEditInputCell.swift in Sources */,
-				D4016292238A38B80074D8D2 /* GOJContactDetailItemVM.swift in Sources */,
 				D40162AF238A38E40074D8D2 /* GOJApiHandler.swift in Sources */,
-				D401627D238A38B80074D8D2 /* GOJContactAddEditHeaderCell.swift in Sources */,
+				D4B2FA67238BEC9C008FE474 /* GOJContactListVC.swift in Sources */,
+				D4B2FA6A238BEC9C008FE474 /* GOJContactListCell.swift in Sources */,
+				D4B2FA4C238BEC9C008FE474 /* GOJContactDetailsInfoCell.swift in Sources */,
+				D4BCBCD4238BE5AF0089142F /* GJMockAPIHandler.swift in Sources */,
 				D40162B2238A38E40074D8D2 /* GOJNetworkHelper.swift in Sources */,
-				D4016286238A38B80074D8D2 /* GOJContactListItemVM.swift in Sources */,
+				D4B2FA5E238BEC9C008FE474 /* GOJContactListSectionVM.swift in Sources */,
 				D40162AC238A38E40074D8D2 /* GOJImageDownloadManager.swift in Sources */,
+				D4B2FA5B238BEC9C008FE474 /* GOJContactListVM.swift in Sources */,
+				D4B2FA58238BEC9C008FE474 /* GOJContactAddEditHeaderCell.swift in Sources */,
+				D4B2FA46238BEC9C008FE474 /* GOJContactDetailVC.swift in Sources */,
 				D401623F238A34B30074D8D2 /* GOJAssignmentTests.swift in Sources */,
-				D401629B238A38B80074D8D2 /* GOJContactDetailsHeaderCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -544,27 +564,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				D40162BC238A38E40074D8D2 /* GOJExtensions.swift in Sources */,
-				D401628D238A38B80074D8D2 /* GOJContactListVC.swift in Sources */,
+				D4B2FA53238BEC9C008FE474 /* GOJContactAddEditVC.swift in Sources */,
+				D4B2FA44238BEC9C008FE474 /* GOJContactDetailVM.swift in Sources */,
+				D4B2FA50238BEC9C008FE474 /* GOJContactAddEditVM.swift in Sources */,
+				D4B2FA4A238BEC9C008FE474 /* GOJContactDetailsHeaderCell.swift in Sources */,
 				D40162B9238A38E40074D8D2 /* GOJConstants.swift in Sources */,
-				D4016299238A38B80074D8D2 /* GOJContactDetailVC.swift in Sources */,
-				D4016296238A38B80074D8D2 /* GOJContactDetailVM.swift in Sources */,
-				D4016275238A38B80074D8D2 /* GOJContactAddEditVM.swift in Sources */,
-				D4016278238A38B80074D8D2 /* GOJContactAddEditVC.swift in Sources */,
-				D4016290238A38B80074D8D2 /* GOJContactListCell.swift in Sources */,
-				D4016284238A38B80074D8D2 /* GOJContactListSectionVM.swift in Sources */,
-				D401628A238A38B80074D8D2 /* GOJContactModel.swift in Sources */,
-				D401629F238A38B80074D8D2 /* GOJContactDetailsInfoCell.swift in Sources */,
-				D4016281238A38B80074D8D2 /* GOJContactListVM.swift in Sources */,
+				D4B2FA65238BEC9C008FE474 /* GOJContactModel.swift in Sources */,
+				D4B2FA62238BEC9C008FE474 /* GOJContactListItemVM.swift in Sources */,
+				D4B2FA56238BEC9C008FE474 /* GOJContactAddEditInputCell.swift in Sources */,
+				D4B2FA41238BEC9C008FE474 /* GOJContactDetailItemVM.swift in Sources */,
 				D40162B6238A38E40074D8D2 /* GOJImageDownloadOperation.swift in Sources */,
-				D401627B238A38B80074D8D2 /* GOJContactAddEditInputCell.swift in Sources */,
-				D4016293238A38B80074D8D2 /* GOJContactDetailItemVM.swift in Sources */,
 				D40162B0238A38E40074D8D2 /* GOJApiHandler.swift in Sources */,
-				D401627E238A38B80074D8D2 /* GOJContactAddEditHeaderCell.swift in Sources */,
+				D4B2FA68238BEC9C008FE474 /* GOJContactListVC.swift in Sources */,
+				D4B2FA6B238BEC9C008FE474 /* GOJContactListCell.swift in Sources */,
+				D4B2FA4D238BEC9C008FE474 /* GOJContactDetailsInfoCell.swift in Sources */,
+				D4BCBCD5238BE5AF0089142F /* GJMockAPIHandler.swift in Sources */,
 				D40162B3238A38E40074D8D2 /* GOJNetworkHelper.swift in Sources */,
-				D4016287238A38B80074D8D2 /* GOJContactListItemVM.swift in Sources */,
+				D4B2FA5F238BEC9C008FE474 /* GOJContactListSectionVM.swift in Sources */,
 				D40162AD238A38E40074D8D2 /* GOJImageDownloadManager.swift in Sources */,
+				D4B2FA5C238BEC9C008FE474 /* GOJContactListVM.swift in Sources */,
+				D4B2FA59238BEC9C008FE474 /* GOJContactAddEditHeaderCell.swift in Sources */,
+				D4B2FA47238BEC9C008FE474 /* GOJContactDetailVC.swift in Sources */,
 				D401624A238A34B30074D8D2 /* GOJAssignmentUITests.swift in Sources */,
-				D401629C238A38B80074D8D2 /* GOJContactDetailsHeaderCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
