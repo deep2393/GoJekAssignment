@@ -22,32 +22,32 @@ class GOJContactDetailVC: UIViewController {
     //MARK:- Life Cycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        if self.viewModel == nil {
+        if viewModel == nil {
             assertionFailure("GOJContactDetailVC: Empty View Model")
         }
-        self.setupUI()
+        setupUI()
     }
     //MARK:- Actions
     @IBAction func editAction(_ sender: Any) {
-        if let controller: UINavigationController = self.storyboard?.instantiateViewController(withIdentifier: "GOJContactAddEditVCNavigationController") as? UINavigationController,
+        if let controller: UINavigationController = storyboard?.instantiateViewController(withIdentifier: "GOJContactAddEditVCNavigationController") as? UINavigationController,
             let topController: GOJContactAddEditVC = controller.topViewController as? GOJContactAddEditVC{
-            topController.viewModel = self.viewModel.getEditViewModel()
-            self.navigationController?.present(controller, animated: true, completion: nil)
+            topController.viewModel = viewModel.getEditViewModel()
+            navigationController?.present(controller, animated: true, completion: nil)
         }
     }
     
     //MARK:- Private Methods
     private func setupUI() {
-        self.contactDetailTableView.rowHeight = UITableView.automaticDimension
-        self.contactDetailTableView.dataSource = self
-        self.contactDetailTableView.delegate = self
-        self.contactDetailTableView.tableFooterView = UIView(frame: CGRect.zero)
-        self.addHandlers()
-        self.viewModel.fetchDetails()
+        contactDetailTableView.rowHeight = UITableView.automaticDimension
+        contactDetailTableView.dataSource = self
+        contactDetailTableView.delegate = self
+        contactDetailTableView.tableFooterView = UIView(frame: CGRect.zero)
+        addHandlers()
+        viewModel.fetchDetails()
     }
 
     private func addHandlers() {
-        self.viewModel.callbackHandler = { [weak self] (callbackType: GOJCallback) in
+        viewModel.callbackHandler = { [weak self] (callbackType: GOJCallback) in
             if let weakSelf: GOJContactDetailVC = self {
                 DispatchQueue.main.async {
                     switch callbackType {
@@ -89,11 +89,11 @@ class GOJContactDetailVC: UIViewController {
 //MARK:- UITableViewDataSource
 extension GOJContactDetailVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.viewModel.cellItemModels.count
+        return viewModel.cellItemModels.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let model: GOJContactDetailItemVM = self.viewModel.cellItemModels[indexPath.row]
+        let model: GOJContactDetailItemVM = viewModel.cellItemModels[indexPath.row]
         switch model.cellType {
         case .header:
             if let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: GOJContactDetailsHeaderCell.self), for: indexPath) as? GOJContactDetailsHeaderCell {
@@ -114,7 +114,7 @@ extension GOJContactDetailVC: UITableViewDataSource {
 //MARK:- UITableViewDelegate
 extension GOJContactDetailVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
-        let model: GOJContactDetailItemVM = self.viewModel.cellItemModels[indexPath.row]
+        let model: GOJContactDetailItemVM = viewModel.cellItemModels[indexPath.row]
         switch model.cellType {
         case .header:
             return 270
@@ -127,13 +127,13 @@ extension GOJContactDetailVC: UITableViewDelegate {
 //MARK:- MFMessageComposeViewControllerDelegate
 extension GOJContactDetailVC: MFMessageComposeViewControllerDelegate {
     func messageComposeViewController(_ controller: MFMessageComposeViewController, didFinishWith result: MessageComposeResult) {
-        self.dismiss(animated: true, completion: nil)
+        dismiss(animated: true, completion: nil)
     }
 }
 
 //MARK:- MFMailComposeViewControllerDelegate
 extension GOJContactDetailVC: MFMailComposeViewControllerDelegate {
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
-        self.dismiss(animated: true, completion: nil)
+        dismiss(animated: true, completion: nil)
     }
 }

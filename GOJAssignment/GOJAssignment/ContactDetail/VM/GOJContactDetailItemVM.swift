@@ -17,7 +17,7 @@ class GOJContactDetailItemVM: GOJContactListItemVM {
 
     //MARK:- Init Methods
     init(contact: GOJContactModel, type: GOJDetailCellType, delegate: GOJContactDetailsComnProtocol) {
-        self.cellType = type
+        cellType = type
         self.delegate = delegate
         super.init(contactModel: contact)
     }
@@ -27,19 +27,19 @@ class GOJContactDetailItemVM: GOJContactListItemVM {
         var key: String? = ""
         var value: String? = ""
 
-        switch self.cellType {
+        switch cellType {
         case .firstName:
             key = GOJStringConstants.firstName
-            value = self.model.firstName
+            value = model.firstName
         case .lastName:
             key = GOJStringConstants.lastName
-            value = self.model.lastName
+            value = model.lastName
         case .mobile:
             key = GOJStringConstants.mobile
-            value = self.model.phoneNumber
+            value = model.phoneNumber
         case .email:
             key = GOJStringConstants.email
-            value = self.model.email
+            value = model.email
         default:
             break
         }
@@ -47,24 +47,24 @@ class GOJContactDetailItemVM: GOJContactListItemVM {
     }
 
     func toggleFavourite() {
-        self.delegate?.toggleFavouriteStatus()
+        delegate?.toggleFavouriteStatus()
     }
 
     func openCallInterface() {
-        if let mobile = self.model.phoneNumber, mobile.isEmpty == false {
-            self.delegate?.call(toMobile: mobile)
+        if let mobile = model.phoneNumber, mobile.isEmpty == false {
+            delegate?.call(toMobile: mobile)
         }
     }
 
     func openMessageInterface() {
-        if let mobile = self.model.phoneNumber, mobile.isEmpty == false {
-            self.delegate?.message(toMobile: mobile)
+        if let mobile = model.phoneNumber, mobile.isEmpty == false {
+            delegate?.message(toMobile: mobile)
         }
     }
 
     func openEmailInterface() {
-        if let email = self.model.email, email.isEmpty == false {
-            self.delegate?.mail(toEmail: email)
+        if let email = model.email, email.isEmpty == false {
+            delegate?.mail(toEmail: email)
         }
     }
 }

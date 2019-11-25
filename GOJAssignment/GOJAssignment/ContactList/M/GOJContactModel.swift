@@ -47,11 +47,11 @@ struct GOJContactModel: Decodable {
     func getFullName() -> String {
         var str: String = ""
 
-        if let text: String = self.firstName {
+        if let text: String = firstName {
             str += text
         }
 
-        if let text: String = self.lastName {
+        if let text: String = lastName {
             if str.isEmpty == false {
                 str += " "
             }
@@ -62,7 +62,7 @@ struct GOJContactModel: Decodable {
     }
 
     func getProfileImage() -> String? {
-        if let imageUrl = self.profileImage {
+        if let imageUrl = profileImage {
             if imageUrl.contains("http") { // already contains host
                 return imageUrl
             } else {
@@ -78,19 +78,19 @@ struct GOJContactModel: Decodable {
 
     func getDictionary() -> [String: Any] {
         var dictionary:[String: Any] = [String: Any]()
-        if let text: String = self.firstName {
+        if let text: String = firstName {
             dictionary[CodingKeys.firstName.rawValue] = text
         }
 
-        if let text: String = self.lastName {
+        if let text: String = lastName {
             dictionary[CodingKeys.lastName.rawValue] = text
         }
 
-        if let text: String = self.phoneNumber {
+        if let text: String = phoneNumber {
             dictionary[CodingKeys.phoneNumber.rawValue] = text
         }
 
-        if let text: String = self.email {
+        if let text: String = email {
             dictionary[CodingKeys.email.rawValue] = text
         }
 
@@ -99,20 +99,20 @@ struct GOJContactModel: Decodable {
     }
 
     func validate() -> Error? {
-        if self.firstName?.isEmpty != false, (self.firstName?.count ?? 0) < 2 {
+        if firstName?.isEmpty != false, (self.firstName?.count ?? 0) < 2 {
             return NSError.getError(message: GOJStringConstants.invalidFirstName)
         }
 
-        if self.lastName?.isEmpty != false, (self.lastName?.count ?? 0) < 2 {
+        if lastName?.isEmpty != false, (self.lastName?.count ?? 0) < 2 {
             return NSError.getError(message: GOJStringConstants.invalidLastName)
         }
         return nil
     }
 
     func getError() -> String? {
-        if let error: String = self.error {
+        if let error: String = error {
             return error
-        } else if let errors:[String] = self.errors {
+        } else if let errors:[String] = errors {
             return errors.joined(separator: "\n")
         }
         return nil

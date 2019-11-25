@@ -17,21 +17,21 @@ class GOJContactDetailViewModelsTests: XCTestCase, GOJContactDetailsComnProtocol
 
     //MARK:- Life Cycle
     override func setUp() {
-        self.model = GOJContactModel(contactID: 9553, createdAt: nil, updatedAt: nil, contactDetailURL: "http://gojek-contacts-app.herokuapp.com/contacts/9553.json", profileImage: "/images/missing.png", firstName: "1Test", lastName: "ert", email: "test@test.com", phoneNumber: "9876543210", favorite: false, error: nil, errors: nil, image: nil)
-        self.detailsVM = GOJContactDetailVM(contact: self.model, apiHandler: GOJMockAPIHandler(), delegate: self)
-        self.itemVM = GOJContactDetailItemVM(contact: self.model, type: GOJDetailCellType.firstName, delegate: self.detailsVM)
+        model = GOJContactModel(contactID: 9553, createdAt: nil, updatedAt: nil, contactDetailURL: "http://gojek-contacts-app.herokuapp.com/contacts/9553.json", profileImage: "/images/missing.png", firstName: "1Test", lastName: "ert", email: "test@test.com", phoneNumber: "9876543210", favorite: false, error: nil, errors: nil, image: nil)
+        detailsVM = GOJContactDetailVM(contact: model, apiHandler: GOJMockAPIHandler(), delegate: self)
+        itemVM = GOJContactDetailItemVM(contact: model, type: GOJDetailCellType.firstName, delegate: detailsVM)
     }
 
     override func tearDown() {
-        self.model = nil
-        self.detailsVM = nil
+        model = nil
+        detailsVM = nil
     }
 
     //MARK:- Test Methods
     //MARK: GJContactDetailViewModel
     func testFetchDetails() {
         let promise: XCTestExpectation = expectation(description: "Details fetched")
-        self.detailsVM.callbackHandler = {(callbackType: GOJCallback) in
+        detailsVM.callbackHandler = {(callbackType: GOJCallback) in
             switch callbackType {
             case .showError(let error):
                 XCTFail(error.localizedDescription)
@@ -42,21 +42,21 @@ class GOJContactDetailViewModelsTests: XCTestCase, GOJContactDetailsComnProtocol
             }
         }
 
-        self.detailsVM.fetchDetails()
+        detailsVM.fetchDetails()
         wait(for: [promise], timeout: 5)
         XCTAssertNotNil(self.detailsVM.model.contactID, "Unable to fetch details of object")
-        XCTAssertEqual(self.detailsVM.model.contactID, self.model.contactID, "Invalid details fetched")
+        XCTAssertEqual(self.detailsVM.model.contactID, model.contactID, "Invalid details fetched")
     }
 
     func testGetEditViewModel() {
-        let itemVM: GOJContactAddEditVM = self.detailsVM.getEditViewModel()
+        let itemVM: GOJContactAddEditVM = detailsVM.getEditViewModel()
         XCTAssertNotNil(itemVM.model.contactID, "Unable to fetch correct object")
-        XCTAssertEqual(itemVM.model.contactID, self.model.contactID, "Invalid model fetched")
+        XCTAssertEqual(itemVM.model.contactID, model.contactID, "Invalid model fetched")
     }
 
     func testToggleFavStatus()  {
         let promise: XCTestExpectation = expectation(description: "Contact Saved successfully")
-        self.detailsVM.callbackHandler = {(callbackType: GOJCallback) in
+        detailsVM.callbackHandler = {(callbackType: GOJCallback) in
             switch callbackType {
             case .showError(let error):
                 XCTFail(error.localizedDescription)
@@ -66,18 +66,18 @@ class GOJContactDetailViewModelsTests: XCTestCase, GOJContactDetailsComnProtocol
                 break
             }
         }
-        self.detailsVM.toggleFavouriteStatus()
+        detailsVM.toggleFavouriteStatus()
         wait(for: [promise], timeout: 5)
         XCTAssertNotNil(self.detailsVM.model.favorite, "Unable to save details of object")
-        XCTAssertEqual(self.detailsVM.model.contactID, self.model.contactID, "Invalid details saved")
+        XCTAssertEqual(self.detailsVM.model.contactID, model.contactID, "Invalid details saved")
         XCTAssertEqual(self.detailsVM.model.favorite, !self.model.favorite!, "Update failed")
     }
 
     //MARK: GJContactDetailItemViewModel
     func testGetDetails() {
-        let details = self.itemVM.getDetails()
+        let details = itemVM.getDetails()
         XCTAssertNotNil(details.key, "Unable to fetch object details")
         XCTAssertNotNil(details.value, "Unable to fetch object details")
-        XCTAssertEqual(details.value, self.model.firstName, "Invalid model details fetched")
+        XCTAssertEqual(details.value, model.firstName, "Invalid model details fetched")
     }
 }

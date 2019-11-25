@@ -21,18 +21,18 @@ class GOJContactAddEditVM: NSObject {
 
     //MARK:- Init Methods
     init(contact: GOJContactModel, apiHandler: GOJAPIProtocol, delegate: GOJContactDetailsComnProtocol) {
-        self.model = contact
-        self.networkHandler = apiHandler
+        model = contact
+        networkHandler = apiHandler
         self.delegate = delegate
     }
 
     //MARK:- Public Methods
     func imageUrl() -> String? {
-        return self.model.getProfileImage()
+        return model.getProfileImage()
     }
 
     func getSelectedImage() -> UIImage? {
-        return self.model.image
+        return model.image
     }
 
     func getDetails(cellType: GOJDetailCellType) -> (key: String?, value: String?, keyboardType: UIKeyboardType) {
@@ -43,17 +43,17 @@ class GOJContactAddEditVM: NSObject {
         switch cellType {
         case .firstName:
             key = GOJStringConstants.firstName
-            value = self.model.firstName
+            value = model.firstName
         case .lastName:
             key = GOJStringConstants.lastName
-            value = self.model.lastName
+            value = model.lastName
         case .mobile:
             key = GOJStringConstants.mobile
-            value = self.model.phoneNumber
+            value = model.phoneNumber
             keyboardType = UIKeyboardType.phonePad
         case .email:
             key = GOJStringConstants.email
-            value = self.model.email
+            value = model.email
             keyboardType = UIKeyboardType.emailAddress
         default:
             break
@@ -62,7 +62,7 @@ class GOJContactAddEditVM: NSObject {
     }
 
     func update(value: Any?, cellType: GOJDetailCellType) {
-        var localCopy: GOJContactModel = self.model
+        var localCopy: GOJContactModel = model
         switch cellType {
         case .firstName:
             localCopy.firstName = value as? String
@@ -75,16 +75,16 @@ class GOJContactAddEditVM: NSObject {
         case .header:
             localCopy.image = value as? UIImage
         }
-        self.model.update(model: localCopy)
+        model.update(model: localCopy)
     }
 
     func saveContact() {
-        if let error: Error = self.model.validate() {
-            self.callbackHandler?(GOJCallback.showError(error: error))
+        if let error: Error = model.validate() {
+            callbackHandler?(GOJCallback.showError(error: error))
         } else {
-            self.callbackHandler?(GOJCallback.showLoader)
-            let params: [String: Any] = self.model.getDictionary()
-            self.networkHandler.updateContactDetails(contactId: self.model.contactID, params: params) { [weak self] (models, error) in
+            callbackHandler?(GOJCallback.showLoader)
+            let params: [String: Any] = model.getDictionary()
+            networkHandler.updateContactDetails(contactId: model.contactID, params: params) { [weak self] (models, error) in
                 if let error: Error = error {
                     self?.callbackHandler?(GOJCallback.showError(error: error))
                 } else if let updatedContact: GOJContactModel = models?.first{
@@ -103,6 +103,6 @@ class GOJContactAddEditVM: NSObject {
     }
 
     func openImagePicker() {
-        self.callbackHandler?(GOJCallback.openImagePicker)
+        callbackHandler?(GOJCallback.openImagePicker)
     }
 }

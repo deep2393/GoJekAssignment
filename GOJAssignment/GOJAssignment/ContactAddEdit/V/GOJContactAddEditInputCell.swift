@@ -22,22 +22,22 @@ class GOJContactAddEditInputCell: UITableViewCell {
     //MARK:- Layout methods
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.inputField.delegate = self
+        inputField.delegate = self
     }
 
     //MARK:- Actions
     @IBAction func textDidChange(_ sender: Any) {
-        self.itemViewModel.update(value: self.inputField.text, cellType: self.cellType)
+        itemViewModel.update(value: inputField.text, cellType: cellType)
     }
 
     //MARK:- Public Methods
     func configure(type: GOJDetailCellType, viewModel: GOJContactAddEditVM) {
-        self.cellType = type
-        self.itemViewModel = viewModel
-        let details = self.itemViewModel.getDetails(cellType: self.cellType)
-        self.nameLabel.text = details.key
-        self.inputField.text = details.value
-        self.inputField.keyboardType = details.keyboardType
+        cellType = type
+        itemViewModel = viewModel
+        let details = itemViewModel.getDetails(cellType: cellType)
+        nameLabel.text = details.key
+        inputField.text = details.value
+        inputField.keyboardType = details.keyboardType
     }
 }
 

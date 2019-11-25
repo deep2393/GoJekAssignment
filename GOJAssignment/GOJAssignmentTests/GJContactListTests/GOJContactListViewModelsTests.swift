@@ -14,18 +14,18 @@ class GOJContactListViewModelsTests: XCTestCase {
 
     //MARK:- Life Cycle
     override func setUp() {
-        self.contactListVM = GOJContactListVM(apiHandler: GOJMockAPIHandler())
+        contactListVM = GOJContactListVM(apiHandler: GOJMockAPIHandler())
     }
 
     override func tearDown() {
-        self.contactListVM = nil
+        contactListVM = nil
     }
 
     //MARK:- Test Methods
     //MARK: GJContactListViewModel
     func testFetchContacts() {
         let promise: XCTestExpectation = expectation(description: "fetched Objects count > 0")
-        self.contactListVM.callbackHandler = {(callbackType: GOJCallback) in
+        contactListVM.callbackHandler = {(callbackType: GOJCallback) in
             switch callbackType {
             case .showError(let error):
                 XCTFail(error.localizedDescription)
@@ -37,39 +37,39 @@ class GOJContactListViewModelsTests: XCTestCase {
         }
 
         XCTAssertEqual(self.contactListVM.sectionViewModels.count, 0, "Results should be empty before the data task runs")
-        self.contactListVM.fetchContacts()
+        contactListVM.fetchContacts()
         wait(for: [promise], timeout: 5)
         XCTAssertEqual(self.contactListVM.sectionViewModels.count , 20, "Unable to parse all objects")
     }
 
     func testGetSectionIndexTitles() {
-        self.contactListVM.fetchContacts()
-        if let indexTitles = self.contactListVM.getSectionIndexTitles() {
+        contactListVM.fetchContacts()
+        if let indexTitles = contactListVM.getSectionIndexTitles() {
             XCTAssertEqual(indexTitles.count , 20, "Unable to parse all objects")
         }
     }
 
     func testGetItemViewModel() {
-        self.contactListVM.fetchContacts()
-        let itemVM:GOJContactListItemVM = self.contactListVM.getItemViewModel(indexPath: IndexPath(row: 0, section: 0))
+        contactListVM.fetchContacts()
+        let itemVM:GOJContactListItemVM = contactListVM.getItemViewModel(indexPath: IndexPath(row: 0, section: 0))
         XCTAssertEqual(itemVM.model.contactID , 9555, "Unable to fetch correct object")
     }
 
     func testGetDetailViewModel() {
-        self.contactListVM.fetchContacts()
-        let itemVM:GOJContactDetailVM = self.contactListVM.getDetailsViewModel(indexPath: IndexPath(row: 0, section: 0))
+        contactListVM.fetchContacts()
+        let itemVM:GOJContactDetailVM = contactListVM.getDetailsViewModel(indexPath: IndexPath(row: 0, section: 0))
         XCTAssertEqual(itemVM.model.contactID , 9555, "Unable to fetch correct object")
     }
 
     func testGetAddViewModel() {
-        let itemVM:GOJContactAddEditVM = self.contactListVM.getAddViewModel()
+        let itemVM:GOJContactAddEditVM = contactListVM.getAddViewModel()
         XCTAssertNil(itemVM.model.contactID, "Unable to fetch correct object")
     }
 
     //MARK: GJContactListSectionViewModel
     func testAddContact() {
-        self.contactListVM.fetchContacts()
-        let itemVM:GOJContactListSectionVM = self.contactListVM.sectionViewModels[0]
+        contactListVM.fetchContacts()
+        let itemVM:GOJContactListSectionVM = contactListVM.sectionViewModels[0]
         let contactObj: GOJContactModel = itemVM.itemArray[0].model
         XCTAssertNotNil(contactObj.contactID, "Invalid Object")
         itemVM.addContact(contact: contactObj)
@@ -79,20 +79,20 @@ class GOJContactListViewModelsTests: XCTestCase {
     //MARK: GJContactListItemViewModel
 
     func testGetFullName() {
-        self.contactListVM.fetchContacts()
-        let itemVM:GOJContactListItemVM = self.contactListVM.getItemViewModel(indexPath: IndexPath(row: 0, section: 0))
+        contactListVM.fetchContacts()
+        let itemVM:GOJContactListItemVM = contactListVM.getItemViewModel(indexPath: IndexPath(row: 0, section: 0))
         XCTAssertEqual(itemVM.getFullName() , "ABCDEF blablabla", "Invalid full name")
     }
 
     func testShouldShowFavButton() {
-        self.contactListVM.fetchContacts()
-        let itemVM:GOJContactListItemVM = self.contactListVM.getItemViewModel(indexPath: IndexPath(row: 0, section: 0))
+        contactListVM.fetchContacts()
+        let itemVM:GOJContactListItemVM = contactListVM.getItemViewModel(indexPath: IndexPath(row: 0, section: 0))
         XCTAssertEqual(itemVM.shouldShowFavButton() , true, "Invalid fav status")
     }
 
     func testImageURL() {
-        self.contactListVM.fetchContacts()
-        let itemVM:GOJContactListItemVM = self.contactListVM.getItemViewModel(indexPath: IndexPath(row: 0, section: 0))
+        contactListVM.fetchContacts()
+        let itemVM:GOJContactListItemVM = contactListVM.getItemViewModel(indexPath: IndexPath(row: 0, section: 0))
         XCTAssertEqual(itemVM.imageUrl() , "\(kBaseUrl)/images/missing.png", "Invalid image url")
     }
 

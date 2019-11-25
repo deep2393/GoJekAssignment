@@ -26,7 +26,7 @@ class GOJMockAPIHandler: GOJAPIProtocol {
     }
 
     func getContactDetails(contactId: Int, completionHandler: @escaping ContactFetcherHandler) {
-        self.getContactList { (models, error) in
+        getContactList { (models, error) in
             if let error: Error = error {
                 completionHandler(nil, error)
             } else if var model: GOJContactModel = models?.first {
@@ -39,7 +39,7 @@ class GOJMockAPIHandler: GOJAPIProtocol {
     }
 
     func updateContactDetails(contactId: Int?, params: [String : Any], completionHandler: @escaping ContactFetcherHandler) {
-        self.getContactList { (models, error) in
+        getContactList { (models, error) in
             if let error: Error = error {
                 completionHandler(nil, error)
             } else if var model: GOJContactModel = models?.first {

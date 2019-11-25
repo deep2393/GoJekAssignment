@@ -27,8 +27,8 @@ class GOJContactDetailsInfoCell: UITableViewCell {
     //MARK:- Public Methods
     func configure(viewModel: GOJContactDetailItemVM) {
         let details = viewModel.getDetails()
-        self.nameLabel.text = details.key
-        self.detailsLabel.text = details.value
+        nameLabel.text = details.key
+        detailsLabel.text = details.value
     }
     
 }

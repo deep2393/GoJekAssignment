@@ -17,12 +17,12 @@ class GOJContactListSectionVM {
 
     //MARK:- Init Methods
     init(title: String) {
-        self.sectionTitle = title
-        self.itemArray = [GOJContactListItemVM]()
+        sectionTitle = title
+        itemArray = [GOJContactListItemVM]()
     }
 
     //MARK:- Public methods
     func addContact(contact: GOJContactModel) {
-        self.itemArray.append(GOJContactListItemVM(contactModel: contact))
+        itemArray.append(GOJContactListItemVM(contactModel: contact))
     }
 }

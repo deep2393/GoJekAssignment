@@ -23,10 +23,10 @@ class GOJContactAddEditVC: UIViewController {
     //MARK:- Life Cycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        if self.viewModel == nil {
+        if viewModel == nil {
             assertionFailure("GOJContactAddEditVC: Empty View Model")
         }
-        self.setupUI()
+        setupUI()
     }
 
     deinit {
@@ -35,28 +35,28 @@ class GOJContactAddEditVC: UIViewController {
 
     //MARK:- Actions
     @IBAction func cancelAction(_ sender: Any) {
-        self.view.endEditing(true)
-        self.dismiss(animated: true, completion: nil)
+        view.endEditing(true)
+        dismiss(animated: true, completion: nil)
     }
     
     @IBAction func doneAction(_ sender: Any) {
-        self.view.endEditing(true)
-        self.viewModel.saveContact()
+        view.endEditing(true)
+        viewModel.saveContact()
     }
     
     //MARK:- Private Methods
     private func setupUI() {
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardNotification(notification:)), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
-        self.navigationController?.navigationBar.shadowImage = UIImage()
-        self.addEditTableView.rowHeight = UITableView.automaticDimension
-        self.addEditTableView.dataSource = self
-        self.addEditTableView.delegate = self
-        self.addEditTableView.tableFooterView = UIView(frame: CGRect.zero)
-        self.addHandlers()
+        navigationController?.navigationBar.shadowImage = UIImage()
+        addEditTableView.rowHeight = UITableView.automaticDimension
+        addEditTableView.dataSource = self
+        addEditTableView.delegate = self
+        addEditTableView.tableFooterView = UIView(frame: CGRect.zero)
+        addHandlers()
     }
 
     private func addHandlers() {
-        self.viewModel.callbackHandler = { [weak self] (callbackType: GOJCallback) in
+        viewModel.callbackHandler = { [weak self] (callbackType: GOJCallback) in
             if let weakSelf: GOJContactAddEditVC = self {
                 DispatchQueue.main.async {
                     switch callbackType {
@@ -91,9 +91,9 @@ class GOJContactAddEditVC: UIViewController {
             let animationCurveRaw = animationCurveRawNSN?.uintValue ?? UIView.AnimationOptions.curveEaseInOut.rawValue
             let animationCurve:UIView.AnimationOptions = UIView.AnimationOptions(rawValue: animationCurveRaw)
             if endFrameY >= UIScreen.main.bounds.size.height {
-                self.tableBottomConstraint?.constant = 0.0
+                tableBottomConstraint?.constant = 0.0
             } else {
-                self.tableBottomConstraint?.constant = endFrame?.size.height ?? 0.0
+                tableBottomConstraint?.constant = endFrame?.size.height ?? 0.0
             }
             UIView.animate(withDuration: duration,
                            delay: TimeInterval(0),
@@ -115,7 +115,7 @@ class GOJContactAddEditVC: UIViewController {
 
         alert.addAction(UIAlertAction.init(title: GOJStringConstants.cancel, style: .cancel, handler: nil))
 
-        self.present(alert, animated: true, completion: nil)
+        present(alert, animated: true, completion: nil)
     }
 
     private func openCamera(){
@@ -124,7 +124,7 @@ class GOJContactAddEditVC: UIViewController {
             imagePicker.delegate = self
             imagePicker.sourceType = UIImagePickerController.SourceType.camera
             imagePicker.allowsEditing = false
-            self.present(imagePicker, animated: true, completion: nil)
+            present(imagePicker, animated: true, completion: nil)
         }
     }
 
@@ -134,7 +134,7 @@ class GOJContactAddEditVC: UIViewController {
             imagePicker.delegate = self
             imagePicker.allowsEditing = true
             imagePicker.sourceType = UIImagePickerController.SourceType.photoLibrary
-            self.present(imagePicker, animated: true, completion: nil)
+            present(imagePicker, animated: true, completion: nil)
         }
     }
 }
@@ -142,8 +142,8 @@ class GOJContactAddEditVC: UIViewController {
 extension GOJContactAddEditVC: UIImagePickerControllerDelegate, UINavigationControllerDelegate{
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let pickedImage = info[.originalImage] as? UIImage {
-            self.viewModel.update(value: pickedImage, cellType: GOJDetailCellType.header)
-            self.addEditTableView.reloadData()
+            viewModel.update(value: pickedImage, cellType: GOJDetailCellType.header)
+            addEditTableView.reloadData()
         }
         picker.dismiss(animated: true, completion: nil)
     }
@@ -152,20 +152,20 @@ extension GOJContactAddEditVC: UIImagePickerControllerDelegate, UINavigationCont
 //MARK:- UITableViewDataSource
 extension GOJContactAddEditVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.viewModel.cellTypes.count
+        return viewModel.cellTypes.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let type: GOJDetailCellType = self.viewModel.cellTypes[indexPath.row]
+        let type: GOJDetailCellType = viewModel.cellTypes[indexPath.row]
         switch type {
         case .header:
             if let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: GOJContactAddEditHeaderCell.self), for: indexPath) as? GOJContactAddEditHeaderCell {
-                cell.configure(type: type, viewModel: self.viewModel)
+                cell.configure(type: type, viewModel: viewModel)
                 return cell
             }
         default:
             if let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: GOJContactAddEditInputCell.self), for: indexPath) as? GOJContactAddEditInputCell {
-                cell.configure(type: type, viewModel: self.viewModel)
+                cell.configure(type: type, viewModel: viewModel)
                 return cell
             }
         }
@@ -177,7 +177,7 @@ extension GOJContactAddEditVC: UITableViewDataSource {
 //MARK:- UITableViewDelegate
 extension GOJContactAddEditVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
-        let type: GOJDetailCellType = self.viewModel.cellTypes[indexPath.row]
+        let type: GOJDetailCellType = viewModel.cellTypes[indexPath.row]
         switch type {
         case .header:
             return 150

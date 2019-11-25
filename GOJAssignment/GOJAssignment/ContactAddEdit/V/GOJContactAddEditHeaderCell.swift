@@ -22,45 +22,45 @@ class GOJContactAddEditHeaderCell: UITableViewCell {
     //MARK:- Layout methods
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.userImageView.layer.borderWidth = 3
-        self.userImageView.layer.borderColor = UIColor.white.cgColor
+        userImageView.layer.borderWidth = 3
+        userImageView.layer.borderColor = UIColor.white.cgColor
 
-        self.gradientLayer = CAGradientLayer()
-        self.gradientLayer?.colors = [UIColor.white.cgColor, GOJColorConstants.applicationColor.withAlphaComponent(0.1).cgColor]
-        self.gradientLayer?.locations = [0.0 , 1.0]
-        self.gradientLayer?.startPoint = CGPoint(x: 1.0, y: 0.0)
-        self.gradientLayer?.endPoint = CGPoint(x: 1.0, y: 1.0)
-        self.gradientLayer?.frame = self.contentView.frame
-        self.contentView.layer.insertSublayer(self.gradientLayer!, at: 0)
+        gradientLayer = CAGradientLayer()
+        gradientLayer?.colors = [UIColor.white.cgColor, GOJColorConstants.applicationColor.withAlphaComponent(0.1).cgColor]
+        gradientLayer?.locations = [0.0 , 1.0]
+        gradientLayer?.startPoint = CGPoint(x: 1.0, y: 0.0)
+        gradientLayer?.endPoint = CGPoint(x: 1.0, y: 1.0)
+        gradientLayer?.frame = contentView.frame
+        contentView.layer.insertSublayer(self.gradientLayer!, at: 0)
     }
 
     override func layoutSubviews() {
         super.layoutSubviews()
-        self.gradientLayer?.frame = self.contentView.frame
-        self.userImageView.layer.cornerRadius = self.userImageView.frame.size.width / 2
+        gradientLayer?.frame = contentView.frame
+        userImageView.layer.cornerRadius = userImageView.frame.size.width / 2
     }
 
     //MARK:- Actions
     @IBAction func editImageAction(_ sender: Any) {
-        self.itemViewModel.openImagePicker()
+        itemViewModel.openImagePicker()
     }
 
     //MARK:- Public Methods
     func configure(type: GOJDetailCellType, viewModel: GOJContactAddEditVM) {
-        self.cellType = type
-        self.itemViewModel = viewModel
-        self.setupUI()
+        cellType = type
+        itemViewModel = viewModel
+        setupUI()
     }
 
     //MARK:- Private Methods
     private func setupUI() {
-        self.setupImage(imageURL: self.itemViewModel.imageUrl(), image: self.itemViewModel.getSelectedImage())
+        setupImage(imageURL: itemViewModel.imageUrl(), image: itemViewModel.getSelectedImage())
     }
 
     private func setupImage(imageURL: String?, image: UIImage?) {
-        self.userImageView.image = UIImage(named: GOJImageConstants.placeholderImage)
+        userImageView.image = UIImage(named: GOJImageConstants.placeholderImage)
         if let image: UIImage = image {
-            self.userImageView.image = image
+            userImageView.image = image
         } else if let url: String = imageURL {
             GOJImageDownloadManager.sharedInstance.getImageWithPath(url: URL(string: url), indexPath: IndexPath(row: 0, section: 0)) { [weak self] (image, url, idxPath, error) in
                 if let image = image{
